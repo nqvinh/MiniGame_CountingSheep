@@ -1,0 +1,17 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:a03d2fe8eacbbe7804d5af69a2c8698b:fcb44adb024c28d31d1a87c5c40df242:d1a2b667e1a9c3352c21d5003854cfc5$
+#
+:format=40300
+:texture=textMesh.png
+:size=128x128
+:pivotpoints=enabled
+:borders=disabled
+
+boosterIcon;1;75;86;52; 0.5;0.5; 0;0;0;0; 6;86;20;66;0;34;0;0;19;0;52;86;52; 4;2;4;5;2;3;4;1;2;5;0;1;5
+sheepIcon;1;9;64;64; 0.5;0.5; 0;0;0;0; 8;64;0;17;0;5;9;0;19;0;45;6;58;19;64;64;64; 6;0;6;7;4;5;6;3;6;1;3;4;6;3;1;2;0;1;6
+sheepMiniCon;89;95;32;32; 0.5;0.5; 0;0;0;0; 4;32;0;0;0;0;32;32;32; 2;1;2;3;0;1;3

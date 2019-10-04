@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: ea0cd72153f152f40a87285a64171edb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sleeping
+  fontNames:
+  - Sleeping
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 10630db0a722d4d43a42df8ff261136b, type: 3}
+  - {fileID: 12800000, guid: 31e48ca3ec64c8a4db809b48d4e382af, type: 3}
+  - {fileID: 12800000, guid: a31fd76c89d243a41a5b9f8077a43951, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

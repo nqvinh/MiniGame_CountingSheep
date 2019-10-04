@@ -6,7 +6,7 @@
      Properties { 
          _MainTex("Base (RGB)", 2D) = "white" {} 
 		 _Color ("Tint", Color) = (1,1,1,1)
-		 _Outline("Outline Thickness", Range(0.0, 0.3)) = 0.002
+		 _Outline("Outline Thickness", Range(0.0, 1)) = 0.0
 		_OutlineColor("Outline Color", Color) = (0,0,0,1)
 		[MaterialToggle] _CastShadow ( "Cast Shadow", Float ) = 0
      } 
