@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using System;
 using TMPro;
+using UnityEngine.UI;
 
 public class GameController : Singleton<GameController>
 {
@@ -56,6 +57,18 @@ public class GameController : Singleton<GameController>
     [SerializeField]
     TMPRichTextX txtTopCountingText;
 
+    [SerializeField]
+    TextMeshProUGUI txtLevelProgress;
+
+    [SerializeField]
+    Image lvlProgress;
+
+    [SerializeField]
+    TextMeshProUGUI txtLimitSheep;
+
+    [SerializeField]
+    Farmer farmer;
+
     //Create Sheep Pool
     SheepController[] sheepControllersPool;
     int numOfSheep=20;
@@ -77,6 +90,8 @@ public class GameController : Singleton<GameController>
     public Camera mainCam;
 
     private int currentSheepCount = 0;
+    private double currentSheepValue = 0;
+
     [SerializeField]
     private bool isOnCutScene = true;
 
@@ -87,6 +102,11 @@ public class GameController : Singleton<GameController>
     private CameraHandler cameraHandler;
 
     private Vector3 lastPickingPos = Vector3.zero;
+
+    public const int numOfSheepType= 50;
+    private bool isLockCamera = false;
+
+    private int currentSheepInCage = 0;
 
     private void Awake()
     {
@@ -121,34 +141,124 @@ public class GameController : Singleton<GameController>
 
     private void Start()
     {
-        if (isOnCutScene)
+        ConfigManager.Instance.LoadConfig();
+        SimpleResourcesManager.Instance.LoadResource();
+        DialogManager.Instance.LoadDialog();
+        DataManager.Instance.LoadData((isSuccess) =>
         {
-            cameraHandler.enabled = false;
-            cutSceneSheep.gameObject.SetActive(true);
-            OpenGateLeaveSheepOut(cutSceneSheep);
-        }
-        else
-        {
-            Destroy(camTarget.gameObject);
-            Destroy(camOverrall.gameObject);
-            Destroy(camCart.transform.parent.gameObject);
+            BoostTimer.Instance.SetUp();
+            DataManager.Instance.PlayerData.userPlayTime += 1;
+            currentSheepValue = DataManager.Instance.PlayerData.userSheepCoin;
+            LoadSheep(DataManager.Instance.PlayerData.sheepDatas);
+            string content = string.Format("<sprite>sheepIcon</sprite>{0}", BigNumbers.BigNumber.ToShortString(currentSheepValue.ToString("F0"), 4));
+            txtTopCountingText.SetText(content);
 
-            Destroy(mainCam.GetComponent<Cinemachine.CinemachineBrain>());
+            LevelConfigData lvlConfig = ConfigManager.Instance.GetLevelConfigByLevel(DataManager.Instance.PlayerData.userLevel);
+            float lvlProgressVal = DataManager.Instance.PlayerData.userExp*1.0f / lvlConfig.Maxexp;
 
-            cameraHandler.enabled = true;
-            cutSceneSheep.gameObject.SetActive(false);
-            int initSheepCount = 10;
-            for (int i = 0; i < initSheepCount; ++i)
+            txtLevelProgress.text = "Lv. " + DataManager.Instance.PlayerData.userLevel + "- <color=white>" + (lvlProgressVal * 100).ToString("F0") + "%";
+            lvlProgress.fillAmount = lvlProgressVal;
+
+            txtLimitSheep.text = currentSheepInCage+"/"+lvlConfig.Maxsheep;
+
+            if (DataManager.Instance.PlayerData.userLevel >= 3)
+                SpawnTimer.Instance.Setup();
+
+            if (isOnCutScene && DataManager.Instance.PlayerData.userPlayTime == 1)
             {
-                SpawnSheep();
-            }
-        }
+                camTarget.gameObject.SetActive(true);
+                cameraHandler.enabled = false;
+                cutSceneSheep.gameObject.SetActive(true);
+                mainCam.GetComponent<Cinemachine.CinemachineBrain>().enabled = true;
+                OpenGateLeaveSheepOut(cutSceneSheep);
 
+                SheepConfigData sheepConfigData = ConfigManager.Instance.GetSheepConfigByType(1);
+                cutSceneSheep.InitSheep(sheepConfigData.Sheepvalue, sheepConfigData.Speed);
+            }
+            else
+            {
+                Destroy(camTarget.gameObject);
+                Destroy(camOverrall.gameObject);
+                Destroy(camCart.transform.parent.gameObject);
+
+                Destroy(mainCam.GetComponent<Cinemachine.CinemachineBrain>());
+
+                cameraHandler.enabled = true;
+                cutSceneSheep.gameObject.SetActive(false);
+
+                if (DataManager.Instance.PlayerData.userPlayTime == 1)
+                {
+                    int initSheepCount = 1;
+                    for (int i = 0; i < initSheepCount; ++i)
+                    {
+                        SheepController sheepController = SheepFactory.Instance.CreateNewSheep(1);
+                        GameController.Instance.PutSheepBackToCage(sheepController);
+                        SimpleResourcesManager.Instance.ShowParticle("MergeFx", sheepController.transform.position, 1);
+                    }
+                }
+            }
+        });
     }
 
 
+    void LoadSheep(List<SheepData> sheepDatas)
+    {
+        int sheepCount = sheepDatas.Count;
+        for (int i = 0; i < sheepCount; ++i)
+        {
+            SheepController sheep = SheepFactory.Instance.CreateNewSheep(sheepDatas[i].sheepType);
+            sheep.InitSheep(sheepDatas[i].sheepType);
+            sheep.transform.position = sheepDatas[i].position;
+            sheep.transform.localEulerAngles = sheepDatas[i].localEulerAngles;
+            switch ((SheepController.SheepState)sheepDatas[i].sheepState)
+            {
+                case SheepController.SheepState.Idle:
+                    currentSheepInCage++; 
+                    break;
+                case SheepController.SheepState.IsMovingOut:
+                    sheep.MoveOutOfCage();
+                    break;
+                case SheepController.SheepState.Running:
+                    sheep.transform.localEulerAngles = new Vector3(0, 90, 0);
+                    sheep.transform.position = beginPos.position;
+                    sheep.transform.position = sheep.transform.position  + UnityEngine.Random.Range(-3, 0) * sheep.transform.forward;
+                    sheep.DOMoveOnPath();
+                    break;
+                case SheepController.SheepState.Jumping:
+                    sheep.DoJumpOverFence();
+                    break;
+                case SheepController.SheepState.Picking:
+                    var pos = sheep.transform.position;
+                    pos.y = 1.8f;
+                    sheep.transform.position = pos;
+                    currentSheepInCage++;
+                    break;
+                default:
+                    break;
+            }
+            activeSheeps.Add(sheep);
+        }
+    }
+
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            BoostTimer.Instance.ActiveBoost(BoostType.SheepSpeedUp);
+            BoostSpeedOnce();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            BoostTimer.Instance.ActiveBoost(BoostType.x2SheepValue);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            BoostTimer.Instance.ActiveBoost(BoostType.SuperBox);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            BoostTimer.Instance.ActiveBoost(BoostType.AutoMerge);
+        }
 
         if (isOnCutScene)
         {
@@ -166,19 +276,33 @@ public class GameController : Singleton<GameController>
                     Destroy(mainCam.GetComponent<Cinemachine.CinemachineBrain>());
                     cameraHandler.enabled = true;
                     isOnCutScene = false;
-                    SpawnSheep();
+                    SheepController sheepController = SheepFactory.Instance.CreateNewSheep(1);
+                    GameController.Instance.PutSheepBackToCage(sheepController);
+                    SimpleResourcesManager.Instance.ShowParticle("MergeFx", sheepController.transform.position, 1);
                 });
             }
         }
         else 
         {
+
+            if (BoostTimer.Instance.IsAutoMerge)
+            {
+                AutoMergeSheep();
+            }
             //Mouse down
             if (Input.GetMouseButtonDown(0))
             {
                 Ray camRay = mainCam.ScreenPointToRay(Input.mousePosition);
                 RaycastHit rayHit;
+
+                int farmerLayer = LayerMask.GetMask("Farmer");
                 int sheepLayer = LayerMask.GetMask("Sheep");
-                if (Physics.Raycast(camRay, out rayHit, float.MaxValue, sheepLayer))
+                if (Physics.Raycast(camRay, out rayHit, float.MaxValue, farmerLayer))
+                {
+                    farmer.Waving();
+                    BoostSpeedOnce();
+                }
+                else if (Physics.Raycast(camRay, out rayHit, float.MaxValue, sheepLayer))
                 {
                     SheepController sheepController = rayHit.collider.GetComponent<SheepController>();
                     if (sheepController.SheepStateProp == SheepController.SheepState.Idle)
@@ -192,7 +316,15 @@ public class GameController : Singleton<GameController>
                         moveOutTrigger.gameObject.SetActive(true);
                     }else if (sheepController.SheepStateProp == SheepController.SheepState.Running)
                     {
-                        PutSheepBackToCage(sheepController);
+                        if (!this.IsCageFull())
+                        {
+                            PutSheepBackToCage(sheepController);
+                        }
+                        else
+                        {
+                            //TODO: Show TextNofity
+                        }
+                        
                     }
                   
                     //MarkCanMergeSheep(pickingSheep);
@@ -204,13 +336,14 @@ public class GameController : Singleton<GameController>
                     float currentHeight = pickingSheep.transform.position.y;
                     Ray camRay = GameController.Instance.mainCam.ScreenPointToRay(Input.mousePosition);
                     RaycastHit rayHit;
-                    int groundLayer = LayerMask.GetMask("Ground");
+                    int groundLayer = LayerMask.GetMask("Island");
                     if (Physics.Raycast(camRay, out rayHit, float.MaxValue, groundLayer))
                     {
                         Vector3 mouseWorldPos = rayHit.point;
                         mouseWorldPos.y = currentHeight;
                         pickingSheep.transform.position = mouseWorldPos;
                     }
+
 
                     int sheepLayer = LayerMask.GetMask("Sheep");
                     if (Physics.Raycast(camRay, out rayHit, float.MaxValue, sheepLayer))
@@ -248,16 +381,16 @@ public class GameController : Singleton<GameController>
 
                     int roadLayer = LayerMask.GetMask("Road");
 
-                   
-                    if (Physics.Raycast(camRay, out rayHit, float.MaxValue, roadLayer))
-                    {
-                        pickingSheep.transform.position = lastPickingPos;
-                        OpenGateLeaveSheepOut(pickingSheep);
-                    }
-                    else if (Physics.Raycast(camRay, out rayHit, float.MaxValue, sheepLayer))
+                    int islandLayer = LayerMask.GetMask("Island");
+
+                    int groundLayer = LayerMask.GetMask("Ground");
+
+                    bool hitSheep = Physics.Raycast(camRay, out rayHit, float.MaxValue, sheepLayer);
+
+                    if (hitSheep && rayHit.collider.GetComponent<SheepController>().SheepStateProp == SheepController.SheepState.Idle)
                     {
                             SheepController selectSheep = rayHit.collider.GetComponent<SheepController>();
-                            if (selectSheep.SheepStateProp == SheepController.SheepState.Idle && selectSheep.SheepType == pickingSheep.SheepType)
+                            if (selectSheep.SheepType < numOfSheepType && selectSheep.SheepStateProp == SheepController.SheepState.Idle && selectSheep.SheepType == pickingSheep.SheepType)
                             {
                                 //DoMerge();
                                 DoMerge(pickingSheep, selectSheep);
@@ -269,13 +402,18 @@ public class GameController : Singleton<GameController>
                                 pickingSheep.transform.position = pos;
                             }
                     }
-                    else
+                    else if (Physics.Raycast(camRay, out rayHit, float.MaxValue, groundLayer))
                     {
 
                         var pos = pickingSheep.transform.position;
                         pos.y -= 0.5f;
                         pickingSheep.transform.position = pos;
 
+                    }
+                    else if (Physics.Raycast(camRay, out rayHit, float.MaxValue, islandLayer))
+                    {
+                        pickingSheep.transform.position = lastPickingPos;
+                        OpenGateLeaveSheepOut(pickingSheep);
                     }
 
                     pickingSheep.SetIsPickingUp(false);
@@ -292,10 +430,17 @@ public class GameController : Singleton<GameController>
 
     }
 
+    private void AutoMergeSheep()
+    {
+        
+    }
 
     void OpenGateLeaveSheepOut(SheepController sheepController)
     {
         currentSheepIsMovingOut++;
+        currentSheepInCage--;
+        LevelConfigData lvlConfig = ConfigManager.Instance.GetLevelConfigByLevel(DataManager.Instance.PlayerData.userLevel);
+        txtLimitSheep.text = currentSheepInCage + "/" + lvlConfig.Maxsheep;
         cageGate.DORotate(Vector3.zero, 0.5f).onComplete = () =>
         {
             sheepController.MoveOutOfCage();
@@ -342,33 +487,41 @@ public class GameController : Singleton<GameController>
         
     }
 
-    SheepController SpawnSheep()
-    {
-        SheepController sheep = sheepControllersPool[currentSheepPoolCursor];
-        currentSheepPoolCursor++;
-        if (currentSheepPoolCursor >= numOfSheep)
-            currentSheepPoolCursor = 0;
+    //SheepController SpawnSheep()
+    //{
+    //    SheepController sheep = sheepControllersPool[currentSheepPoolCursor];
 
-        float x = UnityEngine.Random.Range(spawningBox.bounds.center.x - spawningBox.bounds.extents.x, spawningBox.bounds.center.x + spawningBox.bounds.extents.x);
-        float z = UnityEngine.Random.Range(spawningBox.bounds.center.z - spawningBox.bounds.extents.z, spawningBox.bounds.center.z + spawningBox.bounds.extents.z);
+    //    SheepConfigData sheepConfigData = ConfigManager.Instance.GetSheepConfigByType(1);
+    //    sheep.InitSheep(sheepConfigData.Sheepvalue, sheepConfigData.Speed);
 
-        sheep.transform.position = new Vector3(x, 1.8f, z);
+    //    currentSheepPoolCursor++;
+    //    if (currentSheepPoolCursor >= numOfSheep)
+    //        currentSheepPoolCursor = 0;
 
-        sheep.transform.localEulerAngles = new Vector3(0, UnityEngine.Random.Range(0,360), 0);
+    //    float x = UnityEngine.Random.Range(spawningBox.bounds.center.x - spawningBox.bounds.extents.x, spawningBox.bounds.center.x + spawningBox.bounds.extents.x);
+    //    float z = UnityEngine.Random.Range(spawningBox.bounds.center.z - spawningBox.bounds.extents.z, spawningBox.bounds.center.z + spawningBox.bounds.extents.z);
 
-        sheep.gameObject.SetActive(true);
-        activeSheeps.Add(sheep);
-        return sheep;
-    }
+    //    sheep.transform.position = new Vector3(x, 1.8f, z);
 
-    void PutSheepBackToCage(SheepController sheepController)
+    //    sheep.transform.localEulerAngles = new Vector3(0, UnityEngine.Random.Range(0,360), 0);
+
+    //    sheep.gameObject.SetActive(true);
+    //    activeSheeps.Add(sheep);
+    //    return sheep;
+    //}
+
+    public void PutSheepBackToCage(SheepController sheepController)
     {
         float x = UnityEngine.Random.Range(spawningBox.bounds.center.x - spawningBox.bounds.extents.x, spawningBox.bounds.center.x + spawningBox.bounds.extents.x);
         float z = UnityEngine.Random.Range(spawningBox.bounds.center.z - spawningBox.bounds.extents.z, spawningBox.bounds.center.z + spawningBox.bounds.extents.z);
 
         sheepController.transform.position = new Vector3(x, 1.8f, z);
         sheepController.ResetState();
-        
+        if (!activeSheeps.Contains(sheepController))
+            activeSheeps.Add(sheepController);
+        currentSheepInCage++;
+        LevelConfigData lvlConfig = ConfigManager.Instance.GetLevelConfigByLevel(DataManager.Instance.PlayerData.userLevel);
+        txtLimitSheep.text = currentSheepInCage + "/" + lvlConfig.Maxsheep;
     }
 
     public Vector3[] GetMovePathPoints(int index)
@@ -409,6 +562,44 @@ public class GameController : Singleton<GameController>
         };
     }
 
+    public void AddSheepValue(double value)
+    {
+        float doubleValue = BoostTimer.Instance.IsX2SheepValue ? 2 : 1 ;
+        value *= 2;
+        currentSheepValue += value;
+        DataManager.Instance.PlayerData.userSheepCoin = currentSheepValue;
+
+        TMPRichTextX txtMesh = coutingTextPool[currentTextPoolCursor];
+        currentTextPoolCursor++;
+        if (currentTextPoolCursor >= numOfCountingText)
+            currentTextPoolCursor = 0;
+       
+        string content = string.Format("<sprite>sheepIcon</sprite>{0}", BigNumbers.BigNumber.ToShortString(currentSheepValue.ToString("F0"), 4));
+        txtTopCountingText.SetText(content);
+
+        if (BoostTimer.Instance.IsX2SheepValue)
+        {
+            content = string.Format("<sprite>sheepIcon</sprite><color=blue>{0}", BigNumbers.BigNumber.ToShortString(value.ToString("F0"), 4));
+        }
+        else
+        {
+            content = string.Format("<sprite>sheepIcon</sprite>{0}", BigNumbers.BigNumber.ToShortString(value.ToString("F0"), 4));
+        }
+        
+        txtMesh.SetText(content);
+
+        txtMesh.DOKill();
+        txtMesh.TextMeshProUGUIComp.DOFade(1, 0);
+        txtMesh.gameObject.SetActive(true);
+        txtMesh.transform.position = sampleText.transform.position;
+
+        txtMesh.transform.DOPath(coutingTextFlyWayPoint, 5.0f, PathType.CatmullRom);
+        txtMesh.TextMeshProUGUIComp.DOFade(0, 5.0f).onComplete = () =>
+        {
+            txtMesh.gameObject.SetActive(false);
+        };
+    }
+
 
     void MarkCanMergeSheep(SheepController pickingUpSheep)
     {
@@ -436,7 +627,11 @@ public class GameController : Singleton<GameController>
     void DoMerge(SheepController pickUpSheep, SheepController pointSheep)
     {
         int nextSheepLevel = pickUpSheep.SheepType + 1;
+
         SheepController sheepEvo = SheepFactory.Instance.CreateNewSheep(nextSheepLevel);
+        SheepConfigData sheepConfigData = ConfigManager.Instance.GetSheepConfigByType(nextSheepLevel);
+        sheepEvo.InitSheep(sheepConfigData.Sheepvalue, sheepConfigData.Speed);
+
         sheepEvo.onMoveOutOfCageDone = CloseGate;
         sheepEvo.transform.position = pointSheep.transform.position;
 
@@ -448,5 +643,92 @@ public class GameController : Singleton<GameController>
 
         activeSheeps.Add(sheepEvo);
 
+        currentSheepInCage--;
+        LevelConfigData lvlConfig = ConfigManager.Instance.GetLevelConfigByLevel(DataManager.Instance.PlayerData.userLevel);
+        txtLimitSheep.text = currentSheepInCage + "/" + lvlConfig.Maxsheep;
+        UpdateLevel(pickUpSheep.SheepType);
+
+        SimpleResourcesManager.Instance.ShowParticle("MergeFx", pointSheep.transform.position, 1);
+    }
+
+
+    private void UpdateLevel(int mergeSheep)
+    {
+        SheepConfigData sheepConfig = ConfigManager.Instance.GetSheepConfigByType(mergeSheep);
+        DataManager.Instance.PlayerData.userExp += sheepConfig.Exp;
+        LevelConfigData levelConfig = ConfigManager.Instance.GetLevelConfigByLevel(DataManager.Instance.PlayerData.userLevel);
+        long maxExp = levelConfig.Maxexp;
+
+        float progress = DataManager.Instance.PlayerData.userExp*1.0f / maxExp;
+        Tweener tween = lvlProgress.DOFillAmount(progress, 0.5f);
+        if (progress >= 1.0f)
+        {
+            tween.onComplete = () =>
+            {
+                DataManager.Instance.PlayerData.userLevel += 1;
+                lvlProgress.fillAmount = 0.0f;
+                DataManager.Instance.PlayerData.userExp = 0;
+                txtLevelProgress.text = "Lv. " + DataManager.Instance.PlayerData.userLevel + "- <color=white> 0%";
+                if (DataManager.Instance.PlayerData.userLevel >= 3)
+                    SpawnTimer.Instance.Setup();
+            };
+        }
+        else
+        {
+            txtLevelProgress.text = "Lv. " + DataManager.Instance.PlayerData.userLevel + "- <color=white>" + (progress* 100).ToString("F0") + "%";
+        }
+
+
+
+
+    }
+
+
+    public bool IsCageFull()
+    {
+        LevelConfigData lvlConfig = ConfigManager.Instance.GetLevelConfigByLevel(DataManager.Instance.PlayerData.userLevel);
+        return currentSheepInCage >= lvlConfig.Maxsheep;
+    }
+
+    public void SetLockCamera(bool isLock)
+    {
+        cameraHandler.enabled = isLock==false;
+    }
+
+
+    public List<SheepData> GetSavingSheepData()
+    {
+        int activeSheepCount = activeSheeps.Count;
+        List<SheepData> res = new List<SheepData>();
+         for (int i=0;i<activeSheepCount;++i)
+        {
+            SheepData data = new SheepData();
+            data.sheepType = activeSheeps[i].SheepType;
+            data.sheepState = (int)activeSheeps[i].SheepStateProp;
+            data.position = activeSheeps[i].transform.position;
+            data.localEulerAngles = activeSheeps[i].transform.localEulerAngles;
+            res.Add(data);
+        }
+        return res;
+    }
+
+    public void UpdateSheepCoin()
+    {
+        currentSheepValue = DataManager.Instance.PlayerData.userSheepCoin;
+        string content = string.Format("<sprite>sheepIcon</sprite>{0}", BigNumbers.BigNumber.ToShortString(currentSheepValue.ToString("F0"), 4));
+        txtTopCountingText.SetText(content);
+    }
+
+    void BoostSpeedOnce()
+    {
+        int activeSheepCount = activeSheeps.Count;
+        for (int i = 0; i < activeSheepCount; ++i)
+        {
+            if (activeSheeps[i].SheepStateProp != SheepController.SheepState.Idle ||
+                activeSheeps[i].SheepStateProp != SheepController.SheepState.Picking)
+            {
+                activeSheeps[i].BoostSpeedOnce();
+            }
+        }
     }
 }

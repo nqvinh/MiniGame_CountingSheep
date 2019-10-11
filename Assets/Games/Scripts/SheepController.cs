@@ -7,6 +7,7 @@ using UnityEngine.AI;
 
 public class SheepController : MonoBehaviour
 {
+    [Serializable]
     public enum SheepState
     {
         Idle,
@@ -32,6 +33,16 @@ public class SheepController : MonoBehaviour
     [SerializeField]
     SkinnedMeshRenderer skinnedMeshRenderer;
 
+    [SerializeField]
+    ParticleSystem runParticle;
+
+    [SerializeField]
+    TrailRenderer speedTrail;
+
+    [SerializeField]
+    Color trailColor = Color.white;
+
+
     bool isIdle = true;
 
     public Action onMoveOutOfCageDone = null;
@@ -42,9 +53,17 @@ public class SheepController : MonoBehaviour
     [SerializeField]
     private int mSheepType;
 
+    double sheepValue;
+    float sheepSpeed;
+
     public int SheepType { get => mSheepType; private set => mSheepType = value; }
     public SheepState SheepStateProp { get => sheepState; set => sheepState = value; }
+    public double SheepValue { get => sheepValue; set => sheepValue = value; }
 
+    Tweener currentTween = null;
+    Tween particleRunTween = null;
+
+    bool isBoostSpeedUpOnce=false;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -52,7 +71,8 @@ public class SheepController : MonoBehaviour
         navMeshAgent.enabled = false;
         rigidbody = GetComponent<Rigidbody>();
 
-
+        if (speedTrail)
+            speedTrail.startColor = speedTrail.endColor = trailColor;
         ColorUtility.TryParseHtmlString("#FF00E9", out highLightColor);
         ColorUtility.TryParseHtmlString("#00FF41", out canMergeColor);
     }
@@ -60,12 +80,30 @@ public class SheepController : MonoBehaviour
     private void Start()
     {
         //DOMoveOnPath();
+        //sheepState = SheepState.Idle;
+        //rigidbody.isKinematic = true;
+        //boxCollider.enabled = true;
+
+    }
+
+
+    public void InitSheep(double psheepValue,float psheepSpeed)
+    {
         sheepState = SheepState.Idle;
         rigidbody.isKinematic = true;
         boxCollider.enabled = true;
 
+       
+        sheepSpeed = psheepSpeed;
+        sheepValue = psheepValue;
+        skinnedMeshRenderer.material.SetFloat("_Outline", 0);
     }
 
+    public void InitSheep(int sheepType)
+    {
+        SheepConfigData sheepConfigData = ConfigManager.Instance.GetSheepConfigByType(sheepType);
+        InitSheep(sheepConfigData.Sheepvalue, sheepConfigData.Speed);
+    }
     private void Update()
     {
         //Right Click Test Move With NavMesh
@@ -94,6 +132,8 @@ public class SheepController : MonoBehaviour
                 GameController.Instance.CloseGate();
             }
         }
+
+        speedTrail.gameObject.SetActive(BoostTimer.Instance.IsBoostSpeedUp && (sheepState == SheepState.Running || sheepState == SheepState.Jumping));
     }
 
 
@@ -104,6 +144,14 @@ public class SheepController : MonoBehaviour
         boxCollider.enabled = true;
         animator.SetBool("Moving", false);
         transform.DOKill();
+        skinnedMeshRenderer.material.SetFloat("_Outline", 0);
+
+        SheepConfigData sheepConfigData = ConfigManager.Instance.GetSheepConfigByType(mSheepType);
+        InitSheep(sheepConfigData.Sheepvalue, sheepConfigData.Speed);
+
+        speedTrail.gameObject.SetActive(false);
+        runParticle.gameObject.SetActive(false);
+        particleRunTween.Kill();
     }
 
     public void MoveOutOfCage()
@@ -118,26 +166,48 @@ public class SheepController : MonoBehaviour
         //gameObject.layer = LayerMask.GetMask("Default");
     }
 
-    void DOMoveOnPath()
+    public void DOMoveOnPath()
     {
         sheepState = SheepState.Running;
         rigidbody.isKinematic = true;
         boxCollider.enabled = true;
         animator.SetBool("Moving", true);
         float randSpeed = UnityEngine.Random.Range(-2, 2);
-        this.transform.DOPath(GameController.Instance.GetMovePathPoints(1), GameController.Instance.pathDuration1 + randSpeed).SetLookAt(0.02f);
+        //this.transform.DOPath(GameController.Instance.GetMovePathPoints(1), GameController.Instance.pathDuration1 + randSpeed).SetLookAt(0.02f);
+        float speedUp = BoostTimer.Instance.IsBoostSpeedUp ? 0.25f : 1f;
+        
+        currentTween=this.transform.DOPath(GameController.Instance.GetMovePathPoints(1), sheepSpeed*speedUp).SetLookAt(0.02f);
+        //currentTween.SetSpeedBased(true);
+        
+        if (isBoostSpeedUpOnce && speedTrail.gameObject.activeSelf)
+        {
+            speedTrail.gameObject.SetActive(false);
+        }
+        if (runParticle.gameObject.activeSelf == false)
+        {
+            runParticle.gameObject.SetActive(true);
+            particleRunTween = DOVirtual.DelayedCall(sheepSpeed / 10, () =>
+              {
+                  runParticle.Stop();
+                  runParticle.Play();
+              });
+            particleRunTween.SetLoops(-1);
+        }
+        
     }
 
     void DoMoveToEndPosition()
     {
         sheepState = SheepState.Running;
         animator.SetBool("Moving", true);
-        Tweener moveTween = this.transform.DOPath(GameController.Instance.GetMovePathPoints(2), GameController.Instance.pathDuration2).SetLookAt(0.02f);
+        Tweener moveTween = this.transform.DOPath(GameController.Instance.GetMovePathPoints(2), sheepSpeed*0.07f).SetLookAt(0.02f);
         //Sheep will go a gain path, we got a lopp move
         moveTween.onComplete = () =>
         {
             DOMoveOnPath();
         };
+
+        currentTween = moveTween;
 
     }
 
@@ -165,11 +235,12 @@ public class SheepController : MonoBehaviour
         Vector3[] curvePoints = new Vector3[] { curPos, curPos, midPos, jumpTargetPos, jumpTargetPos };
 
         //Jump Done, sheep follow path to reach end position
-        this.transform.DOPath(curvePoints, jumpTime, PathType.CatmullRom).onComplete = () =>
+        currentTween = this.transform.DOPath(curvePoints, jumpTime, PathType.CatmullRom);
+        currentTween.onComplete = () =>
           {
               isJumping = false;
               DoMoveToEndPosition();
-              GameController.Instance.ShowCoutingText();
+              GameController.Instance.AddSheepValue(this.sheepValue);
           };
     }
 
@@ -201,7 +272,18 @@ public class SheepController : MonoBehaviour
         {
             skinnedMeshRenderer.material.SetFloat("_Outline", 0);
         }
+    }
 
+    public void BoostSpeedOnce()
+    {
+        if (BoostTimer.Instance.IsBoostSpeedUp || isBoostSpeedUpOnce)
+            return;
+        isBoostSpeedUpOnce = true;
+        if (currentTween != null && speedTrail.gameObject.activeSelf==false)
+        {
+            currentTween.timeScale *= 4;
+            speedTrail.gameObject.SetActive(true);
+        }
     }
 
   

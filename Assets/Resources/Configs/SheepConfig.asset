@@ -1,0 +1,367 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 716b897fbf6a0d14ca2037f91a18d211, type: 3}
+  m_Name: SheepConfig
+  m_EditorClassIdentifier: 
+  SheetName: Assets/Resources/Configs/GameConfig.xlsx
+  WorksheetName: SheepConfig
+  dataArray:
+  - sheeptype: 1
+    price: 2
+    sheepvalue: 20
+    speed: 10
+    exp: 2
+    unlocklevel: 0
+    pricebonus: 0.13
+  - sheeptype: 2
+    price: 30
+    sheepvalue: 25
+    speed: 9.6
+    exp: 4
+    unlocklevel: 3
+    pricebonus: 0.133
+  - sheeptype: 3
+    price: 240
+    sheepvalue: 32
+    speed: 9.2
+    exp: 6
+    unlocklevel: 5
+    pricebonus: 0.136
+  - sheeptype: 4
+    price: 1200
+    sheepvalue: 46
+    speed: 8.8
+    exp: 8
+    unlocklevel: 6
+    pricebonus: 0.139
+  - sheeptype: 5
+    price: 4800
+    sheepvalue: 70
+    speed: 8.4
+    exp: 11
+    unlocklevel: 7
+    pricebonus: 0.142
+  - sheeptype: 6
+    price: 14400
+    sheepvalue: 111
+    speed: 8
+    exp: 14
+    unlocklevel: 8
+    pricebonus: 0.145
+  - sheeptype: 7
+    price: 44640
+    sheepvalue: 190
+    speed: 7.6
+    exp: 17
+    unlocklevel: 9
+    pricebonus: 0.148
+  - sheeptype: 8
+    price: 138384
+    sheepvalue: 330
+    speed: 7.2
+    exp: 20
+    unlocklevel: 10
+    pricebonus: 0.151
+  - sheeptype: 9
+    price: 428990
+    sheepvalue: 582
+    speed: 6.8
+    exp: 23
+    unlocklevel: 11
+    pricebonus: 0.154
+  - sheeptype: 10
+    price: 1329870
+    sheepvalue: 1085
+    speed: 6.4
+    exp: 27
+    unlocklevel: 12
+    pricebonus: 0.157
+  - sheeptype: 11
+    price: 4255585
+    sheepvalue: 2170
+    speed: 6.4
+    exp: 31
+    unlocklevel: 13
+    pricebonus: 0.16
+  - sheeptype: 12
+    price: 13617871
+    sheepvalue: 4649
+    speed: 6.8
+    exp: 35
+    unlocklevel: 14
+    pricebonus: 0.163
+  - sheeptype: 13
+    price: 43577188
+    sheepvalue: 10451
+    speed: 7.2
+    exp: 39
+    unlocklevel: 15
+    pricebonus: 0.166
+  - sheeptype: 14
+    price: 139447002
+    sheepvalue: 23561
+    speed: 7.6
+    exp: 43
+    unlocklevel: 16
+    pricebonus: 0.169
+  - sheeptype: 15
+    price: 446230405
+    sheepvalue: 53239
+    speed: 8
+    exp: 48
+    unlocklevel: 17
+    pricebonus: 0.172
+  - sheeptype: 16
+    price: 1472560338
+    sheepvalue: 125778
+    speed: 8.4
+    exp: 53
+    unlocklevel: 18
+    pricebonus: 0.175
+  - sheeptype: 17
+    price: 4859449114
+    sheepvalue: 297638
+    speed: 8.8
+    exp: 58
+    unlocklevel: 19
+    pricebonus: 0.178
+  - sheeptype: 18
+    price: 16036182078
+    sheepvalue: 705313
+    speed: 9.2
+    exp: 63
+    unlocklevel: 20
+    pricebonus: 0.181
+  - sheeptype: 19
+    price: 52919400857
+    sheepvalue: 1743107
+    speed: 9.6
+    exp: 68
+    unlocklevel: 21
+    pricebonus: 0.184
+  - sheeptype: 20
+    price: 174634022827
+    sheepvalue: 4312375
+    speed: 10
+    exp: 74
+    unlocklevel: 22
+    pricebonus: 0.187
+  - sheeptype: 21
+    price: 593755677611
+    sheepvalue: 10267559
+    speed: 10
+    exp: 80
+    unlocklevel: 23
+    pricebonus: 0.19
+  - sheeptype: 22
+    price: 2018769303876
+    sheepvalue: 24462927
+    speed: 9.6
+    exp: 86
+    unlocklevel: 24
+    pricebonus: 0.193
+  - sheeptype: 23
+    price: 6863815633179
+    sheepvalue: 58303308
+    speed: 9.2
+    exp: 92
+    unlocklevel: 25
+    pricebonus: 0.196
+  - sheeptype: 24
+    price: 23336973152810
+    sheepvalue: 138956218
+    speed: 8.8
+    exp: 98
+    unlocklevel: 26
+    pricebonus: 0.199
+  - sheeptype: 25
+    price: 79345708719552
+    sheepvalue: 343802949
+    speed: 8.4
+    exp: 105
+    unlocklevel: 27
+    pricebonus: 0.202
+  - sheeptype: 26
+    price: 277709980518433
+    sheepvalue: 850062237
+    speed: 8
+    exp: 112
+    unlocklevel: 28
+    pricebonus: 0.205
+  - sheeptype: 27
+    price: 971984931814516
+    sheepvalue: 2099653725
+    speed: 7.6
+    exp: 119
+    unlocklevel: 29
+    pricebonus: 0.208
+  - sheeptype: 28
+    price: 3401947261350810
+    sheepvalue: 5370693211
+    speed: 7.2
+    exp: 126
+    unlocklevel: 30
+    pricebonus: 0.211
+  - sheeptype: 29
+    price: 11906815414727800
+    sheepvalue: 13712758452
+    speed: 6.8
+    exp: 133
+    unlocklevel: 31
+    pricebonus: 0.214
+  - sheeptype: 30
+    price: 41673853951547400
+    sheepvalue: 34932579962
+    speed: 6.4
+    exp: 141
+    unlocklevel: 32
+    pricebonus: 0.217
+  - sheeptype: 31
+    price: 1.50025874225571e+17
+    sheepvalue: 98036595377
+    speed: 6.4
+    exp: 149
+    unlocklevel: 33
+    pricebonus: 0.22
+  - sheeptype: 32
+    price: 5.40093147212054e+17
+    sheepvalue: 292635407646
+    speed: 6.8
+    exp: 157
+    unlocklevel: 34
+    pricebonus: 0.223
+  - sheeptype: 33
+    price: 1.94433532996339e+18
+    sheepvalue: 871333662980
+    speed: 7.2
+    exp: 165
+    unlocklevel: 35
+    pricebonus: 0.226
+  - sheeptype: 34
+    price: 6.99960718786822e+18
+    sheepvalue: 2678069640630
+    speed: 7.6
+    exp: 173
+    unlocklevel: 36
+    pricebonus: 0.229
+  - sheeptype: 35
+    price: 2.51985858763256e+19
+    sheepvalue: 8215431679528
+    speed: 8
+    exp: 182
+    unlocklevel: 37
+    pricebonus: 0.232
+  - sheeptype: 36
+    price: 1.00794343505302e+20
+    sheepvalue: 25159759518553
+    speed: 8.4
+    exp: 191
+    unlocklevel: 38
+    pricebonus: 0.235
+  - sheeptype: 37
+    price: 4.03177374021209e+20
+    sheepvalue: 82065501317659
+    speed: 8.8
+    exp: 200
+    unlocklevel: 39
+    pricebonus: 0.238
+  - sheeptype: 38
+    price: 1.61270949608484e+21
+    sheepvalue: 267321499029007
+    speed: 9.2
+    exp: 209
+    unlocklevel: 40
+    pricebonus: 0.241
+  - sheeptype: 39
+    price: 6.45083798433935e+21
+    sheepvalue: 869733626272301
+    speed: 9.6
+    exp: 218
+    unlocklevel: 41
+    pricebonus: 0.244
+  - sheeptype: 40
+    price: 2.58033519373574e+22
+    sheepvalue: 3091631249639820
+    speed: 10
+    exp: 228
+    unlocklevel: 42
+    pricebonus: 0.247
+  - sheeptype: 41
+    price: 2.58033519373574e+22
+    sheepvalue: 3091631249639820
+    speed: 10
+    exp: 228
+    unlocklevel: 43
+    pricebonus: 0.247
+  - sheeptype: 42
+    price: 2.58033519373574e+22
+    sheepvalue: 3091631249639820
+    speed: 10
+    exp: 228
+    unlocklevel: 44
+    pricebonus: 0.247
+  - sheeptype: 43
+    price: 2.58033519373574e+22
+    sheepvalue: 3091631249639820
+    speed: 10
+    exp: 228
+    unlocklevel: 45
+    pricebonus: 0.247
+  - sheeptype: 44
+    price: 2.58033519373574e+22
+    sheepvalue: 3091631249639820
+    speed: 10
+    exp: 228
+    unlocklevel: 46
+    pricebonus: 0.247
+  - sheeptype: 45
+    price: 2.58033519373574e+22
+    sheepvalue: 3091631249639820
+    speed: 10
+    exp: 228
+    unlocklevel: 47
+    pricebonus: 0.247
+  - sheeptype: 46
+    price: 2.58033519373574e+22
+    sheepvalue: 3091631249639820
+    speed: 10
+    exp: 228
+    unlocklevel: 48
+    pricebonus: 0.247
+  - sheeptype: 47
+    price: 2.58033519373574e+22
+    sheepvalue: 3091631249639820
+    speed: 10
+    exp: 228
+    unlocklevel: 49
+    pricebonus: 0.247
+  - sheeptype: 48
+    price: 2.58033519373574e+22
+    sheepvalue: 3091631249639820
+    speed: 10
+    exp: 228
+    unlocklevel: 50
+    pricebonus: 0.247
+  - sheeptype: 49
+    price: 2.58033519373574e+22
+    sheepvalue: 3091631249639820
+    speed: 10
+    exp: 228
+    unlocklevel: 51
+    pricebonus: 0.247
+  - sheeptype: 50
+    price: 2.58033519373574e+22
+    sheepvalue: 3091631249639820
+    speed: 10
+    exp: 228
+    unlocklevel: 52
+    pricebonus: 0.247

@@ -1,0 +1,5018 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d3300ef833f02448a9a831dbb368d3, type: 3}
+  m_Name: LevelConfig
+  m_EditorClassIdentifier: 
+  SheetName: Assets/Resources/Configs/GameConfig.xlsx
+  WorksheetName: LevelConfig
+  dataArray:
+  - level: 1
+    maxexp: 20
+    reward_list:
+    - GEM:0
+    - SUN:20000
+    maxsheep: 8
+  - level: 2
+    maxexp: 25
+    reward_list:
+    - POT_SPACE:1
+    maxsheep: 8
+  - level: 3
+    maxexp: 30
+    reward_list:
+    - POT_SPACE:1
+    - GEM:3
+    maxsheep: 8
+  - level: 4
+    maxexp: 50
+    reward_list:
+    - POT_SPACE:1
+    maxsheep: 8
+  - level: 5
+    maxexp: 80
+    reward_list:
+    - POT_SPACE:1
+    - SUN:20000
+    maxsheep: 8
+  - level: 6
+    maxexp: 120
+    reward_list:
+    - POT_SPACE:1
+    - GEM:3
+    maxsheep: 9
+  - level: 7
+    maxexp: 200
+    reward_list:
+    - POT_SPACE:1
+    - SHOVEL:25
+    maxsheep: 9
+  - level: 8
+    maxexp: 250
+    reward_list:
+    - POT_SPACE:1
+    maxsheep: 9
+  - level: 9
+    maxexp: 313
+    reward_list:
+    - POT_SPACE:1
+    maxsheep: 9
+  - level: 10
+    maxexp: 391
+    reward_list:
+    - POT_SPACE:1
+    - GEM:5
+    maxsheep: 9
+  - level: 11
+    maxexp: 489
+    reward_list:
+    - POT_SPACE:1
+    maxsheep: 10
+  - level: 12
+    maxexp: 530
+    reward_list:
+    - SHOVEL:350
+    maxsheep: 10
+  - level: 13
+    maxexp: 571
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 10
+  - level: 14
+    maxexp: 612
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 10
+  - level: 15
+    maxexp: 653
+    reward_list:
+    - GEM:7
+    maxsheep: 10
+  - level: 16
+    maxexp: 694
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 12
+  - level: 17
+    maxexp: 735
+    reward_list:
+    - SHOVEL:1100
+    maxsheep: 12
+  - level: 18
+    maxexp: 776
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 12
+  - level: 19
+    maxexp: 817
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 12
+  - level: 20
+    maxexp: 858
+    reward_list:
+    - GEM:7
+    maxsheep: 12
+  - level: 21
+    maxexp: 899
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 14
+  - level: 22
+    maxexp: 940
+    reward_list:
+    - SHOVEL:2200
+    maxsheep: 14
+  - level: 23
+    maxexp: 981
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 14
+  - level: 24
+    maxexp: 1022
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 14
+  - level: 25
+    maxexp: 1063
+    reward_list:
+    - GEM:7
+    maxsheep: 14
+  - level: 26
+    maxexp: 1104
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 15
+  - level: 27
+    maxexp: 1145
+    reward_list:
+    - SHOVEL:3500
+    maxsheep: 15
+  - level: 28
+    maxexp: 1186
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 15
+  - level: 29
+    maxexp: 1227
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 15
+  - level: 30
+    maxexp: 1268
+    reward_list:
+    - GEM:7
+    maxsheep: 15
+  - level: 31
+    maxexp: 1309
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 16
+  - level: 32
+    maxexp: 1350
+    reward_list:
+    - SHOVEL:5100
+    maxsheep: 16
+  - level: 33
+    maxexp: 1391
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 16
+  - level: 34
+    maxexp: 1432
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 16
+  - level: 35
+    maxexp: 1473
+    reward_list:
+    - GEM:7
+    maxsheep: 16
+  - level: 36
+    maxexp: 1514
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 17
+  - level: 37
+    maxexp: 1555
+    reward_list:
+    - SHOVEL:7000
+    maxsheep: 17
+  - level: 38
+    maxexp: 1596
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 17
+  - level: 39
+    maxexp: 1637
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 17
+  - level: 40
+    maxexp: 1678
+    reward_list:
+    - GEM:7
+    maxsheep: 17
+  - level: 41
+    maxexp: 1719
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 17
+  - level: 42
+    maxexp: 1760
+    reward_list:
+    - SHOVEL:9700
+    maxsheep: 17
+  - level: 43
+    maxexp: 1801
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 17
+  - level: 44
+    maxexp: 1842
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 17
+  - level: 45
+    maxexp: 1883
+    reward_list:
+    - GEM:7
+    maxsheep: 17
+  - level: 46
+    maxexp: 1924
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 17
+  - level: 47
+    maxexp: 1965
+    reward_list:
+    - SHOVEL:12900
+    maxsheep: 17
+  - level: 48
+    maxexp: 2006
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 17
+  - level: 49
+    maxexp: 2047
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 17
+  - level: 50
+    maxexp: 2088
+    reward_list:
+    - GEM:7
+    maxsheep: 17
+  - level: 51
+    maxexp: 2129
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 18
+  - level: 52
+    maxexp: 2170
+    reward_list:
+    - SHOVEL:16700
+    maxsheep: 18
+  - level: 53
+    maxexp: 2211
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 18
+  - level: 54
+    maxexp: 2252
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 18
+  - level: 55
+    maxexp: 2293
+    reward_list:
+    - GEM:7
+    maxsheep: 18
+  - level: 56
+    maxexp: 2334
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 18
+  - level: 57
+    maxexp: 2375
+    reward_list:
+    - SHOVEL:21200
+    maxsheep: 18
+  - level: 58
+    maxexp: 2416
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 18
+  - level: 59
+    maxexp: 2457
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 18
+  - level: 60
+    maxexp: 2498
+    reward_list:
+    - GEM:7
+    maxsheep: 18
+  - level: 61
+    maxexp: 2539
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 19
+  - level: 62
+    maxexp: 2580
+    reward_list:
+    - SHOVEL:27700
+    maxsheep: 19
+  - level: 63
+    maxexp: 2621
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 19
+  - level: 64
+    maxexp: 2662
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 19
+  - level: 65
+    maxexp: 2703
+    reward_list:
+    - GEM:7
+    maxsheep: 19
+  - level: 66
+    maxexp: 2744
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 19
+  - level: 67
+    maxexp: 2785
+    reward_list:
+    - SHOVEL:35500
+    maxsheep: 19
+  - level: 68
+    maxexp: 2826
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 19
+  - level: 69
+    maxexp: 2867
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 19
+  - level: 70
+    maxexp: 2908
+    reward_list:
+    - GEM:7
+    maxsheep: 19
+  - level: 71
+    maxexp: 2949
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 20
+  - level: 72
+    maxexp: 2990
+    reward_list:
+    - SHOVEL:44900
+    maxsheep: 20
+  - level: 73
+    maxexp: 3031
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 20
+  - level: 74
+    maxexp: 3072
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 20
+  - level: 75
+    maxexp: 3113
+    reward_list:
+    - GEM:8
+    maxsheep: 20
+  - level: 76
+    maxexp: 3154
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 20
+  - level: 77
+    maxexp: 3195
+    reward_list:
+    - SHOVEL:56100
+    maxsheep: 20
+  - level: 78
+    maxexp: 3236
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 20
+  - level: 79
+    maxexp: 3277
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 20
+  - level: 80
+    maxexp: 3318
+    reward_list:
+    - GEM:8
+    maxsheep: 20
+  - level: 81
+    maxexp: 3359
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 20
+  - level: 82
+    maxexp: 3400
+    reward_list:
+    - SHOVEL:72300
+    maxsheep: 20
+  - level: 83
+    maxexp: 3441
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 20
+  - level: 84
+    maxexp: 3482
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 20
+  - level: 85
+    maxexp: 3523
+    reward_list:
+    - GEM:8
+    maxsheep: 20
+  - level: 86
+    maxexp: 3564
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 20
+  - level: 87
+    maxexp: 3605
+    reward_list:
+    - SHOVEL:91700
+    maxsheep: 20
+  - level: 88
+    maxexp: 3646
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 20
+  - level: 89
+    maxexp: 3687
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 20
+  - level: 90
+    maxexp: 3728
+    reward_list:
+    - GEM:8
+    maxsheep: 20
+  - level: 91
+    maxexp: 3769
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 22
+  - level: 92
+    maxexp: 3810
+    reward_list:
+    - SHOVEL:114900
+    maxsheep: 22
+  - level: 93
+    maxexp: 3851
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 22
+  - level: 94
+    maxexp: 3892
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 22
+  - level: 95
+    maxexp: 3933
+    reward_list:
+    - GEM:8
+    maxsheep: 22
+  - level: 96
+    maxexp: 3974
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 22
+  - level: 97
+    maxexp: 4015
+    reward_list:
+    - SHOVEL:142800
+    maxsheep: 22
+  - level: 98
+    maxexp: 4056
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 22
+  - level: 99
+    maxexp: 4097
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 22
+  - level: 100
+    maxexp: 4138
+    reward_list:
+    - GEM:8
+    maxsheep: 22
+  - level: 101
+    maxexp: 4179
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 102
+    maxexp: 4220
+    reward_list:
+    - SHOVEL:182900
+    maxsheep: 25
+  - level: 103
+    maxexp: 4261
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 104
+    maxexp: 4302
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 105
+    maxexp: 4343
+    reward_list:
+    - GEM:8
+    maxsheep: 25
+  - level: 106
+    maxexp: 4384
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 107
+    maxexp: 4425
+    reward_list:
+    - SHOVEL:231000
+    maxsheep: 25
+  - level: 108
+    maxexp: 4466
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 109
+    maxexp: 4507
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 110
+    maxexp: 4548
+    reward_list:
+    - GEM:8
+    maxsheep: 25
+  - level: 111
+    maxexp: 4589
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 112
+    maxexp: 4630
+    reward_list:
+    - SHOVEL:288700
+    maxsheep: 25
+  - level: 113
+    maxexp: 4671
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 114
+    maxexp: 4712
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 115
+    maxexp: 4753
+    reward_list:
+    - GEM:8
+    maxsheep: 25
+  - level: 116
+    maxexp: 4794
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 117
+    maxexp: 4835
+    reward_list:
+    - SHOVEL:358000
+    maxsheep: 25
+  - level: 118
+    maxexp: 4876
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 119
+    maxexp: 4917
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 120
+    maxexp: 4958
+    reward_list:
+    - GEM:8
+    maxsheep: 25
+  - level: 121
+    maxexp: 4999
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 122
+    maxexp: 5040
+    reward_list:
+    - SHOVEL:457700
+    maxsheep: 25
+  - level: 123
+    maxexp: 5081
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 124
+    maxexp: 5122
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 125
+    maxexp: 5163
+    reward_list:
+    - GEM:8
+    maxsheep: 25
+  - level: 126
+    maxexp: 5204
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 127
+    maxexp: 5245
+    reward_list:
+    - SHOVEL:577400
+    maxsheep: 25
+  - level: 128
+    maxexp: 5286
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 129
+    maxexp: 5327
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 130
+    maxexp: 5368
+    reward_list:
+    - GEM:8
+    maxsheep: 25
+  - level: 131
+    maxexp: 5409
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 132
+    maxexp: 5450
+    reward_list:
+    - SHOVEL:721000
+    maxsheep: 25
+  - level: 133
+    maxexp: 5491
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 134
+    maxexp: 5532
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 135
+    maxexp: 5573
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 136
+    maxexp: 5614
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 137
+    maxexp: 5655
+    reward_list:
+    - SHOVEL:893300
+    maxsheep: 25
+  - level: 138
+    maxexp: 5696
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 139
+    maxexp: 5737
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 140
+    maxexp: 5778
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 141
+    maxexp: 5819
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 142
+    maxexp: 5860
+    reward_list:
+    - SHOVEL:1141400
+    maxsheep: 25
+  - level: 143
+    maxexp: 5901
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 144
+    maxexp: 5942
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 145
+    maxexp: 5983
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 146
+    maxexp: 6024
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 147
+    maxexp: 6065
+    reward_list:
+    - SHOVEL:1439100
+    maxsheep: 25
+  - level: 148
+    maxexp: 6106
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 149
+    maxexp: 6147
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 150
+    maxexp: 6188
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 151
+    maxexp: 6229
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 152
+    maxexp: 6270
+    reward_list:
+    - SHOVEL:1796400
+    maxsheep: 25
+  - level: 153
+    maxexp: 6311
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 154
+    maxexp: 6352
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 155
+    maxexp: 6393
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 156
+    maxexp: 6434
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 157
+    maxexp: 6475
+    reward_list:
+    - SHOVEL:2225100
+    maxsheep: 25
+  - level: 158
+    maxexp: 6516
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 159
+    maxexp: 6557
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 160
+    maxexp: 6598
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 161
+    maxexp: 6639
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 162
+    maxexp: 6680
+    reward_list:
+    - SHOVEL:2842500
+    maxsheep: 25
+  - level: 163
+    maxexp: 6721
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 164
+    maxexp: 6762
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 165
+    maxexp: 6803
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 166
+    maxexp: 6844
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 167
+    maxexp: 6885
+    reward_list:
+    - SHOVEL:3583300
+    maxsheep: 25
+  - level: 168
+    maxexp: 6926
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 169
+    maxexp: 6967
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 170
+    maxexp: 7008
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 171
+    maxexp: 7049
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 172
+    maxexp: 7090
+    reward_list:
+    - SHOVEL:4472300
+    maxsheep: 25
+  - level: 173
+    maxexp: 7131
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 174
+    maxexp: 7172
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 175
+    maxexp: 7213
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 176
+    maxexp: 7254
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 177
+    maxexp: 7295
+    reward_list:
+    - SHOVEL:5539100
+    maxsheep: 25
+  - level: 178
+    maxexp: 7336
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 179
+    maxexp: 7377
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 180
+    maxexp: 7418
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 181
+    maxexp: 7459
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 182
+    maxexp: 7500
+    reward_list:
+    - SHOVEL:7075200
+    maxsheep: 25
+  - level: 183
+    maxexp: 7541
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 184
+    maxexp: 7582
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 185
+    maxexp: 7623
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 186
+    maxexp: 7664
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 187
+    maxexp: 7705
+    reward_list:
+    - SHOVEL:8918500
+    maxsheep: 25
+  - level: 188
+    maxexp: 7746
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 189
+    maxexp: 7787
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 190
+    maxexp: 7828
+    reward_list:
+    - GEM:9
+    maxsheep: 25
+  - level: 191
+    maxexp: 7869
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 192
+    maxexp: 7910
+    reward_list:
+    - SHOVEL:11130500
+    maxsheep: 25
+  - level: 193
+    maxexp: 7951
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 194
+    maxexp: 7992
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 195
+    maxexp: 8033
+    reward_list:
+    - GEM:10
+    maxsheep: 25
+  - level: 196
+    maxexp: 8074
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 197
+    maxexp: 8115
+    reward_list:
+    - SHOVEL:13784800
+    maxsheep: 25
+  - level: 198
+    maxexp: 8156
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 199
+    maxexp: 8197
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 200
+    maxexp: 8238
+    reward_list:
+    - GEM:10
+    maxsheep: 25
+  - level: 201
+    maxexp: 8279
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 202
+    maxexp: 8320
+    reward_list:
+    - SHOVEL:17607000
+    maxsheep: 25
+  - level: 203
+    maxexp: 8361
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 204
+    maxexp: 8402
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 205
+    maxexp: 8443
+    reward_list:
+    - GEM:10
+    maxsheep: 25
+  - level: 206
+    maxexp: 8484
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 207
+    maxexp: 8525
+    reward_list:
+    - SHOVEL:22193700
+    maxsheep: 25
+  - level: 208
+    maxexp: 8566
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 209
+    maxexp: 8607
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 210
+    maxexp: 8648
+    reward_list:
+    - GEM:10
+    maxsheep: 25
+  - level: 211
+    maxexp: 8689
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 212
+    maxexp: 8730
+    reward_list:
+    - SHOVEL:27697700
+    maxsheep: 25
+  - level: 213
+    maxexp: 8771
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 214
+    maxexp: 8812
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 215
+    maxexp: 8853
+    reward_list:
+    - GEM:10
+    maxsheep: 25
+  - level: 216
+    maxexp: 8894
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 217
+    maxexp: 8935
+    reward_list:
+    - SHOVEL:34302500
+    maxsheep: 25
+  - level: 218
+    maxexp: 8976
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 219
+    maxexp: 9017
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 220
+    maxexp: 9058
+    reward_list:
+    - GEM:10
+    maxsheep: 25
+  - level: 221
+    maxexp: 9099
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 222
+    maxexp: 9140
+    reward_list:
+    - SHOVEL:43813400
+    maxsheep: 25
+  - level: 223
+    maxexp: 9181
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 224
+    maxexp: 9222
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 225
+    maxexp: 9263
+    reward_list:
+    - GEM:11
+    maxsheep: 25
+  - level: 226
+    maxexp: 9304
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 227
+    maxexp: 9345
+    reward_list:
+    - SHOVEL:55226400
+    maxsheep: 25
+  - level: 228
+    maxexp: 9386
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 229
+    maxexp: 9427
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 230
+    maxexp: 9468
+    reward_list:
+    - GEM:11
+    maxsheep: 25
+  - level: 231
+    maxexp: 9509
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 232
+    maxexp: 9550
+    reward_list:
+    - SHOVEL:68922000
+    maxsheep: 25
+  - level: 233
+    maxexp: 9591
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 234
+    maxexp: 9632
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 235
+    maxexp: 9673
+    reward_list:
+    - GEM:11
+    maxsheep: 25
+  - level: 236
+    maxexp: 9714
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 237
+    maxexp: 9755
+    reward_list:
+    - SHOVEL:85356700
+    maxsheep: 25
+  - level: 238
+    maxexp: 9796
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 239
+    maxexp: 9837
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 240
+    maxexp: 9878
+    reward_list:
+    - GEM:11
+    maxsheep: 25
+  - level: 241
+    maxexp: 9919
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 242
+    maxexp: 9960
+    reward_list:
+    - SHOVEL:109022700
+    maxsheep: 25
+  - level: 243
+    maxexp: 10001
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 244
+    maxexp: 10042
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 245
+    maxexp: 10083
+    reward_list:
+    - GEM:11
+    maxsheep: 25
+  - level: 246
+    maxexp: 10124
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 247
+    maxexp: 10165
+    reward_list:
+    - SHOVEL:137421900
+    maxsheep: 25
+  - level: 248
+    maxexp: 10206
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 249
+    maxexp: 10247
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 250
+    maxexp: 10288
+    reward_list:
+    - GEM:11
+    maxsheep: 25
+  - level: 251
+    maxexp: 10329
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 252
+    maxexp: 10370
+    reward_list:
+    - SHOVEL:171500900
+    maxsheep: 25
+  - level: 253
+    maxexp: 10411
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 254
+    maxexp: 10452
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 255
+    maxexp: 10493
+    reward_list:
+    - GEM:12
+    maxsheep: 25
+  - level: 256
+    maxexp: 10534
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 257
+    maxexp: 10575
+    reward_list:
+    - SHOVEL:212395700
+    maxsheep: 25
+  - level: 258
+    maxexp: 10616
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 259
+    maxexp: 10657
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 260
+    maxexp: 10698
+    reward_list:
+    - GEM:12
+    maxsheep: 25
+  - level: 261
+    maxexp: 10739
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 262
+    maxexp: 10780
+    reward_list:
+    - SHOVEL:271284200
+    maxsheep: 25
+  - level: 263
+    maxexp: 10821
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 264
+    maxexp: 10862
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 265
+    maxexp: 10903
+    reward_list:
+    - GEM:12
+    maxsheep: 25
+  - level: 266
+    maxexp: 10944
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 267
+    maxexp: 10985
+    reward_list:
+    - SHOVEL:341950400
+    maxsheep: 25
+  - level: 268
+    maxexp: 11026
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 269
+    maxexp: 11067
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 270
+    maxexp: 11108
+    reward_list:
+    - GEM:12
+    maxsheep: 25
+  - level: 271
+    maxexp: 11149
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 272
+    maxexp: 11190
+    reward_list:
+    - SHOVEL:426749800
+    maxsheep: 25
+  - level: 273
+    maxexp: 11231
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 274
+    maxexp: 11272
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 275
+    maxexp: 11313
+    reward_list:
+    - GEM:12
+    maxsheep: 25
+  - level: 276
+    maxexp: 11354
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 277
+    maxexp: 11395
+    reward_list:
+    - SHOVEL:528509100
+    maxsheep: 25
+  - level: 278
+    maxexp: 11436
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 279
+    maxexp: 11477
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 280
+    maxexp: 11518
+    reward_list:
+    - GEM:12
+    maxsheep: 25
+  - level: 281
+    maxexp: 11559
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 282
+    maxexp: 11600
+    reward_list:
+    - SHOVEL:675042500
+    maxsheep: 25
+  - level: 283
+    maxexp: 11641
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 284
+    maxexp: 11682
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 285
+    maxexp: 11723
+    reward_list:
+    - GEM:14
+    maxsheep: 25
+  - level: 286
+    maxexp: 11764
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 287
+    maxexp: 11805
+    reward_list:
+    - SHOVEL:850882600
+    maxsheep: 25
+  - level: 288
+    maxexp: 11846
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 289
+    maxexp: 11887
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 290
+    maxexp: 11928
+    reward_list:
+    - GEM:14
+    maxsheep: 25
+  - level: 291
+    maxexp: 11969
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 292
+    maxexp: 12010
+    reward_list:
+    - SHOVEL:1061890700
+    maxsheep: 25
+  - level: 293
+    maxexp: 12051
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 294
+    maxexp: 12092
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 25
+  - level: 295
+    maxexp: 12133
+    reward_list:
+    - GEM:14
+    maxsheep: 25
+  - level: 296
+    maxexp: 12174
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 25
+  - level: 297
+    maxexp: 12215
+    reward_list:
+    - SHOVEL:1315100400
+    maxsheep: 25
+  - level: 298
+    maxexp: 12256
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 25
+  - level: 299
+    maxexp: 12297
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 25
+  - level: 300
+    maxexp: 12338
+    reward_list:
+    - GEM:14
+    maxsheep: 25
+  - level: 301
+    maxexp: 12379
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 302
+    maxexp: 12420
+    reward_list:
+    - SHOVEL:1679722300
+    maxsheep: 30
+  - level: 303
+    maxexp: 12461
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 304
+    maxexp: 12502
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 305
+    maxexp: 12543
+    reward_list:
+    - GEM:14
+    maxsheep: 30
+  - level: 306
+    maxexp: 12584
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 307
+    maxexp: 12625
+    reward_list:
+    - SHOVEL:2117268600
+    maxsheep: 30
+  - level: 308
+    maxexp: 12666
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 30
+  - level: 309
+    maxexp: 12707
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 30
+  - level: 310
+    maxexp: 12748
+    reward_list:
+    - GEM:14
+    maxsheep: 30
+  - level: 311
+    maxexp: 12789
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 312
+    maxexp: 12830
+    reward_list:
+    - SHOVEL:2642324200
+    maxsheep: 30
+  - level: 313
+    maxexp: 12871
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 314
+    maxexp: 12912
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 315
+    maxexp: 12953
+    reward_list:
+    - GEM:15
+    maxsheep: 30
+  - level: 316
+    maxexp: 12994
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 317
+    maxexp: 13035
+    reward_list:
+    - SHOVEL:3272390900
+    maxsheep: 30
+  - level: 318
+    maxexp: 13076
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 30
+  - level: 319
+    maxexp: 13117
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 30
+  - level: 320
+    maxexp: 13158
+    reward_list:
+    - GEM:15
+    maxsheep: 30
+  - level: 321
+    maxexp: 13199
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 322
+    maxexp: 13240
+    reward_list:
+    - SHOVEL:4179686900
+    maxsheep: 30
+  - level: 323
+    maxexp: 13281
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 324
+    maxexp: 13322
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 325
+    maxexp: 13363
+    reward_list:
+    - GEM:15
+    maxsheep: 30
+  - level: 326
+    maxexp: 13404
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 327
+    maxexp: 13445
+    reward_list:
+    - SHOVEL:5268442100
+    maxsheep: 30
+  - level: 328
+    maxexp: 13486
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 30
+  - level: 329
+    maxexp: 13527
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 30
+  - level: 330
+    maxexp: 13568
+    reward_list:
+    - GEM:15
+    maxsheep: 30
+  - level: 331
+    maxexp: 13609
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 332
+    maxexp: 13650
+    reward_list:
+    - SHOVEL:6574948300
+    maxsheep: 30
+  - level: 333
+    maxexp: 13691
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 334
+    maxexp: 13732
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 335
+    maxexp: 13773
+    reward_list:
+    - GEM:15
+    maxsheep: 30
+  - level: 336
+    maxexp: 13814
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 337
+    maxexp: 13855
+    reward_list:
+    - SHOVEL:8142755800
+    maxsheep: 30
+  - level: 338
+    maxexp: 13896
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 30
+  - level: 339
+    maxexp: 13937
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 30
+  - level: 340
+    maxexp: 13978
+    reward_list:
+    - GEM:15
+    maxsheep: 30
+  - level: 341
+    maxexp: 14019
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 342
+    maxexp: 14060
+    reward_list:
+    - GEM:15
+    maxsheep: 30
+  - level: 343
+    maxexp: 14101
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 344
+    maxexp: 14142
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 345
+    maxexp: 14183
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 346
+    maxexp: 14224
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 347
+    maxexp: 14265
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 348
+    maxexp: 14306
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 30
+  - level: 349
+    maxexp: 14347
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 30
+  - level: 350
+    maxexp: 14388
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 351
+    maxexp: 14429
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 352
+    maxexp: 14470
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 353
+    maxexp: 14511
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 354
+    maxexp: 14552
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 355
+    maxexp: 14593
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 356
+    maxexp: 14634
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 357
+    maxexp: 14675
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 358
+    maxexp: 14716
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 30
+  - level: 359
+    maxexp: 14757
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 30
+  - level: 360
+    maxexp: 14798
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 361
+    maxexp: 14839
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 362
+    maxexp: 14880
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 363
+    maxexp: 14921
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 364
+    maxexp: 14962
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 365
+    maxexp: 15003
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 366
+    maxexp: 15044
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 367
+    maxexp: 15085
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 368
+    maxexp: 15126
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 30
+  - level: 369
+    maxexp: 15167
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 30
+  - level: 370
+    maxexp: 15208
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 371
+    maxexp: 15249
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 372
+    maxexp: 15290
+    reward_list:
+    - GEM:17
+    maxsheep: 30
+  - level: 373
+    maxexp: 15331
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 374
+    maxexp: 15372
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 375
+    maxexp: 15413
+    reward_list:
+    - GEM:19
+    maxsheep: 30
+  - level: 376
+    maxexp: 15454
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 377
+    maxexp: 15495
+    reward_list:
+    - GEM:19
+    maxsheep: 30
+  - level: 378
+    maxexp: 15536
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 30
+  - level: 379
+    maxexp: 15577
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 30
+  - level: 380
+    maxexp: 15618
+    reward_list:
+    - GEM:19
+    maxsheep: 30
+  - level: 381
+    maxexp: 15659
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 382
+    maxexp: 15700
+    reward_list:
+    - GEM:19
+    maxsheep: 30
+  - level: 383
+    maxexp: 15741
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 384
+    maxexp: 15782
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 385
+    maxexp: 15823
+    reward_list:
+    - GEM:19
+    maxsheep: 30
+  - level: 386
+    maxexp: 15864
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 387
+    maxexp: 15905
+    reward_list:
+    - GEM:19
+    maxsheep: 30
+  - level: 388
+    maxexp: 15946
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 30
+  - level: 389
+    maxexp: 15987
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 30
+  - level: 390
+    maxexp: 16028
+    reward_list:
+    - GEM:19
+    maxsheep: 30
+  - level: 391
+    maxexp: 16069
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 392
+    maxexp: 16110
+    reward_list:
+    - GEM:19
+    maxsheep: 30
+  - level: 393
+    maxexp: 16151
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 394
+    maxexp: 16192
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 30
+  - level: 395
+    maxexp: 16233
+    reward_list:
+    - GEM:19
+    maxsheep: 30
+  - level: 396
+    maxexp: 16274
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 30
+  - level: 397
+    maxexp: 16315
+    reward_list:
+    - GEM:19
+    maxsheep: 30
+  - level: 398
+    maxexp: 16356
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 30
+  - level: 399
+    maxexp: 16397
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 30
+  - level: 400
+    maxexp: 16438
+    reward_list:
+    - GEM:19
+    maxsheep: 30
+  - level: 401
+    maxexp: 16479
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 402
+    maxexp: 16520
+    reward_list:
+    - GEM:19
+    maxsheep: 35
+  - level: 403
+    maxexp: 16561
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 404
+    maxexp: 16602
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 405
+    maxexp: 16643
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 406
+    maxexp: 16684
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 407
+    maxexp: 16725
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 408
+    maxexp: 16766
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 409
+    maxexp: 16807
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 410
+    maxexp: 16848
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 411
+    maxexp: 16889
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 412
+    maxexp: 16930
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 413
+    maxexp: 16971
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 414
+    maxexp: 17012
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 415
+    maxexp: 17053
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 416
+    maxexp: 17094
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 417
+    maxexp: 17135
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 418
+    maxexp: 17176
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 419
+    maxexp: 17217
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 420
+    maxexp: 17258
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 421
+    maxexp: 17299
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 422
+    maxexp: 17340
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 423
+    maxexp: 17381
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 424
+    maxexp: 17422
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 425
+    maxexp: 17463
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 426
+    maxexp: 17504
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 427
+    maxexp: 17545
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 428
+    maxexp: 17586
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 429
+    maxexp: 17627
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 430
+    maxexp: 17668
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 431
+    maxexp: 17709
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 432
+    maxexp: 17750
+    reward_list:
+    - GEM:22
+    maxsheep: 35
+  - level: 433
+    maxexp: 17791
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 434
+    maxexp: 17832
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 435
+    maxexp: 17873
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 436
+    maxexp: 17914
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 437
+    maxexp: 17955
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 438
+    maxexp: 17996
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 439
+    maxexp: 18037
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 440
+    maxexp: 18078
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 441
+    maxexp: 18119
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 442
+    maxexp: 18160
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 443
+    maxexp: 18201
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 444
+    maxexp: 18242
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 445
+    maxexp: 18283
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 446
+    maxexp: 18324
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 447
+    maxexp: 18365
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 448
+    maxexp: 18406
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 449
+    maxexp: 18447
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 450
+    maxexp: 18488
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 451
+    maxexp: 18529
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 452
+    maxexp: 18570
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 453
+    maxexp: 18611
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 454
+    maxexp: 18652
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 455
+    maxexp: 18693
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 456
+    maxexp: 18734
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 457
+    maxexp: 18775
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 458
+    maxexp: 18816
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 459
+    maxexp: 18857
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 460
+    maxexp: 18898
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 461
+    maxexp: 18939
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 462
+    maxexp: 18980
+    reward_list:
+    - GEM:26
+    maxsheep: 35
+  - level: 463
+    maxexp: 19021
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 464
+    maxexp: 19062
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 465
+    maxexp: 19103
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 466
+    maxexp: 19144
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 467
+    maxexp: 19185
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 468
+    maxexp: 19226
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 469
+    maxexp: 19267
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 470
+    maxexp: 19308
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 471
+    maxexp: 19349
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 472
+    maxexp: 19390
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 473
+    maxexp: 19431
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 474
+    maxexp: 19472
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 475
+    maxexp: 19513
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 476
+    maxexp: 19554
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 477
+    maxexp: 19595
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 478
+    maxexp: 19636
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 479
+    maxexp: 19677
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 480
+    maxexp: 19718
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 481
+    maxexp: 19759
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 482
+    maxexp: 19800
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 483
+    maxexp: 19841
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 484
+    maxexp: 19882
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 485
+    maxexp: 19923
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 486
+    maxexp: 19964
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 487
+    maxexp: 20005
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 488
+    maxexp: 20046
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 489
+    maxexp: 20087
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 490
+    maxexp: 20128
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 491
+    maxexp: 20169
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 492
+    maxexp: 20210
+    reward_list:
+    - GEM:30
+    maxsheep: 35
+  - level: 493
+    maxexp: 20251
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 494
+    maxexp: 20292
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 495
+    maxexp: 20333
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 496
+    maxexp: 20374
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 497
+    maxexp: 20415
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 498
+    maxexp: 20456
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 499
+    maxexp: 20497
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 500
+    maxexp: 20538
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 501
+    maxexp: 20579
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 502
+    maxexp: 20620
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 503
+    maxexp: 20661
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 504
+    maxexp: 20702
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 505
+    maxexp: 20743
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 506
+    maxexp: 20784
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 507
+    maxexp: 20825
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 508
+    maxexp: 20866
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 509
+    maxexp: 20907
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 510
+    maxexp: 20948
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 511
+    maxexp: 20989
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 512
+    maxexp: 21030
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 513
+    maxexp: 21071
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 514
+    maxexp: 21112
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 515
+    maxexp: 21153
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 516
+    maxexp: 21194
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 517
+    maxexp: 21235
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 518
+    maxexp: 21276
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 519
+    maxexp: 21317
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 520
+    maxexp: 21358
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 521
+    maxexp: 21399
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 522
+    maxexp: 21440
+    reward_list:
+    - GEM:34
+    maxsheep: 35
+  - level: 523
+    maxexp: 21481
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 524
+    maxexp: 21522
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 525
+    maxexp: 21563
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 526
+    maxexp: 21604
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 527
+    maxexp: 21645
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 528
+    maxexp: 21686
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 529
+    maxexp: 21727
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 530
+    maxexp: 21768
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 531
+    maxexp: 21809
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 532
+    maxexp: 21850
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 533
+    maxexp: 21891
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 534
+    maxexp: 21932
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 535
+    maxexp: 21973
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 536
+    maxexp: 22014
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 537
+    maxexp: 22055
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 538
+    maxexp: 22096
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 539
+    maxexp: 22137
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 540
+    maxexp: 22178
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 541
+    maxexp: 22219
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 542
+    maxexp: 22260
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 543
+    maxexp: 22301
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 544
+    maxexp: 22342
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 545
+    maxexp: 22383
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 546
+    maxexp: 22424
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 547
+    maxexp: 22465
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 548
+    maxexp: 22506
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 549
+    maxexp: 22547
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 550
+    maxexp: 22588
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 551
+    maxexp: 22629
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 552
+    maxexp: 22670
+    reward_list:
+    - GEM:40
+    maxsheep: 35
+  - level: 553
+    maxexp: 22711
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 554
+    maxexp: 22752
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 555
+    maxexp: 22793
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 556
+    maxexp: 22834
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 557
+    maxexp: 22875
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 558
+    maxexp: 22916
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 559
+    maxexp: 22957
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 560
+    maxexp: 22998
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 561
+    maxexp: 23039
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 562
+    maxexp: 23080
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 563
+    maxexp: 23121
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 564
+    maxexp: 23162
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 565
+    maxexp: 23203
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 566
+    maxexp: 23244
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 567
+    maxexp: 23285
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 568
+    maxexp: 23326
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 569
+    maxexp: 23367
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 570
+    maxexp: 23408
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 571
+    maxexp: 23449
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 572
+    maxexp: 23490
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 573
+    maxexp: 23531
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 574
+    maxexp: 23572
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 575
+    maxexp: 23613
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 576
+    maxexp: 23654
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 577
+    maxexp: 23695
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 578
+    maxexp: 23736
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 579
+    maxexp: 23777
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 580
+    maxexp: 23818
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 581
+    maxexp: 23859
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 582
+    maxexp: 23900
+    reward_list:
+    - GEM:47
+    maxsheep: 35
+  - level: 583
+    maxexp: 23941
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 584
+    maxexp: 23982
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 585
+    maxexp: 24023
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 586
+    maxexp: 24064
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 587
+    maxexp: 24105
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 588
+    maxexp: 24146
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 589
+    maxexp: 24187
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 590
+    maxexp: 24228
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 591
+    maxexp: 24269
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 592
+    maxexp: 24310
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 593
+    maxexp: 24351
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 594
+    maxexp: 24392
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 595
+    maxexp: 24433
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 596
+    maxexp: 24474
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 597
+    maxexp: 24515
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 598
+    maxexp: 24556
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 599
+    maxexp: 24597
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 600
+    maxexp: 24638
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 601
+    maxexp: 24679
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 602
+    maxexp: 24720
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 603
+    maxexp: 24761
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 604
+    maxexp: 24802
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 605
+    maxexp: 24843
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 606
+    maxexp: 24884
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 607
+    maxexp: 24925
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 608
+    maxexp: 24966
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 609
+    maxexp: 25007
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 610
+    maxexp: 25048
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 611
+    maxexp: 25089
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 612
+    maxexp: 25130
+    reward_list:
+    - GEM:55
+    maxsheep: 35
+  - level: 613
+    maxexp: 25171
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 614
+    maxexp: 25212
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 615
+    maxexp: 25253
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 616
+    maxexp: 25294
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 617
+    maxexp: 25335
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 618
+    maxexp: 25376
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 619
+    maxexp: 25417
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 620
+    maxexp: 25458
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 621
+    maxexp: 25499
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 622
+    maxexp: 25540
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 623
+    maxexp: 25581
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 624
+    maxexp: 25622
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 625
+    maxexp: 25663
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 626
+    maxexp: 25704
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 627
+    maxexp: 25745
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 628
+    maxexp: 25786
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 629
+    maxexp: 25827
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 630
+    maxexp: 25868
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 631
+    maxexp: 25909
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 632
+    maxexp: 25950
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 633
+    maxexp: 25991
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 634
+    maxexp: 26032
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 635
+    maxexp: 26073
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 636
+    maxexp: 26114
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 637
+    maxexp: 26155
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 638
+    maxexp: 26196
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 639
+    maxexp: 26237
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 640
+    maxexp: 26278
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 641
+    maxexp: 26319
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 642
+    maxexp: 26360
+    reward_list:
+    - GEM:65
+    maxsheep: 35
+  - level: 643
+    maxexp: 26401
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 644
+    maxexp: 26442
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 645
+    maxexp: 26483
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 646
+    maxexp: 26524
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 647
+    maxexp: 26565
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 648
+    maxexp: 26606
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 649
+    maxexp: 26647
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 650
+    maxexp: 26688
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 651
+    maxexp: 26729
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 652
+    maxexp: 26770
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 653
+    maxexp: 26811
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 654
+    maxexp: 26852
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 655
+    maxexp: 26893
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 656
+    maxexp: 26934
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 657
+    maxexp: 26975
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 658
+    maxexp: 27016
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 659
+    maxexp: 27057
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 660
+    maxexp: 27098
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 661
+    maxexp: 27139
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 662
+    maxexp: 27180
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 663
+    maxexp: 27221
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 664
+    maxexp: 27262
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 665
+    maxexp: 27303
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 666
+    maxexp: 27344
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 667
+    maxexp: 27385
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 668
+    maxexp: 27426
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 669
+    maxexp: 27467
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 670
+    maxexp: 27508
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 671
+    maxexp: 27549
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 672
+    maxexp: 27590
+    reward_list:
+    - GEM:77
+    maxsheep: 35
+  - level: 673
+    maxexp: 27631
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 674
+    maxexp: 27672
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 675
+    maxexp: 27713
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 676
+    maxexp: 27754
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 677
+    maxexp: 27795
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 678
+    maxexp: 27836
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 679
+    maxexp: 27877
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 680
+    maxexp: 27918
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 681
+    maxexp: 27959
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 682
+    maxexp: 28000
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 683
+    maxexp: 28041
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 684
+    maxexp: 28082
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 685
+    maxexp: 28123
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 686
+    maxexp: 28164
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 687
+    maxexp: 28205
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 688
+    maxexp: 28246
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 689
+    maxexp: 28287
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 690
+    maxexp: 28328
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 691
+    maxexp: 28369
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 692
+    maxexp: 28410
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 693
+    maxexp: 28451
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 694
+    maxexp: 28492
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 695
+    maxexp: 28533
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 696
+    maxexp: 28574
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 697
+    maxexp: 28615
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 698
+    maxexp: 28656
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 699
+    maxexp: 28697
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 700
+    maxexp: 28738
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 701
+    maxexp: 28779
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 702
+    maxexp: 28820
+    reward_list:
+    - GEM:92
+    maxsheep: 35
+  - level: 703
+    maxexp: 28861
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 704
+    maxexp: 28902
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 705
+    maxexp: 28943
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 706
+    maxexp: 28984
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 707
+    maxexp: 29025
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 708
+    maxexp: 29066
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 709
+    maxexp: 29107
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 710
+    maxexp: 29148
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 711
+    maxexp: 29189
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 712
+    maxexp: 29230
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 713
+    maxexp: 29271
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 714
+    maxexp: 29312
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 715
+    maxexp: 29353
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 716
+    maxexp: 29394
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 717
+    maxexp: 29435
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 718
+    maxexp: 29476
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 719
+    maxexp: 29517
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 720
+    maxexp: 29558
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 721
+    maxexp: 29599
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 722
+    maxexp: 29640
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 723
+    maxexp: 29681
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 724
+    maxexp: 29722
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 725
+    maxexp: 29763
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 726
+    maxexp: 29804
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 727
+    maxexp: 29845
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 728
+    maxexp: 29886
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 729
+    maxexp: 29927
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 730
+    maxexp: 29968
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 731
+    maxexp: 30009
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 732
+    maxexp: 30050
+    reward_list:
+    - GEM:109
+    maxsheep: 35
+  - level: 733
+    maxexp: 30091
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 734
+    maxexp: 30132
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 735
+    maxexp: 30173
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 736
+    maxexp: 30214
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 737
+    maxexp: 30255
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 738
+    maxexp: 30296
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 739
+    maxexp: 30337
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 740
+    maxexp: 30378
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 741
+    maxexp: 30419
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 742
+    maxexp: 30460
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 743
+    maxexp: 30501
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 744
+    maxexp: 30542
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 745
+    maxexp: 30583
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 746
+    maxexp: 30624
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 747
+    maxexp: 30665
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 748
+    maxexp: 30706
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 749
+    maxexp: 30747
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 750
+    maxexp: 30788
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 751
+    maxexp: 30829
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 752
+    maxexp: 30870
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 753
+    maxexp: 30911
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 754
+    maxexp: 30952
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 755
+    maxexp: 30993
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 756
+    maxexp: 31034
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 757
+    maxexp: 31075
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 758
+    maxexp: 31116
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 759
+    maxexp: 31157
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 760
+    maxexp: 31198
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 761
+    maxexp: 31239
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 762
+    maxexp: 31280
+    reward_list:
+    - GEM:130
+    maxsheep: 35
+  - level: 763
+    maxexp: 31321
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 764
+    maxexp: 31362
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 765
+    maxexp: 31403
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 766
+    maxexp: 31444
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 767
+    maxexp: 31485
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 768
+    maxexp: 31526
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 769
+    maxexp: 31567
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 770
+    maxexp: 31608
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 771
+    maxexp: 31649
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 772
+    maxexp: 31690
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 773
+    maxexp: 31731
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 774
+    maxexp: 31772
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 775
+    maxexp: 31813
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 776
+    maxexp: 31854
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 777
+    maxexp: 31895
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 778
+    maxexp: 31936
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 779
+    maxexp: 31977
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 780
+    maxexp: 32018
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 781
+    maxexp: 32059
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 782
+    maxexp: 32100
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 783
+    maxexp: 32141
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 784
+    maxexp: 32182
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 785
+    maxexp: 32223
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 786
+    maxexp: 32264
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 787
+    maxexp: 32305
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 788
+    maxexp: 32346
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 789
+    maxexp: 32387
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 790
+    maxexp: 32428
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 791
+    maxexp: 32469
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 792
+    maxexp: 32510
+    reward_list:
+    - GEM:154
+    maxsheep: 35
+  - level: 793
+    maxexp: 32551
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 794
+    maxexp: 32592
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 795
+    maxexp: 32633
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 796
+    maxexp: 32674
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 797
+    maxexp: 32715
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 798
+    maxexp: 32756
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 799
+    maxexp: 32797
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 800
+    maxexp: 32838
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 801
+    maxexp: 32879
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 802
+    maxexp: 32920
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 803
+    maxexp: 32961
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 804
+    maxexp: 33002
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 805
+    maxexp: 33043
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 806
+    maxexp: 33084
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 807
+    maxexp: 33125
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 808
+    maxexp: 33166
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 809
+    maxexp: 33207
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 810
+    maxexp: 33248
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 811
+    maxexp: 33289
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 812
+    maxexp: 33330
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 813
+    maxexp: 33371
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 814
+    maxexp: 33412
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 815
+    maxexp: 33453
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 816
+    maxexp: 33494
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 817
+    maxexp: 33535
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 818
+    maxexp: 33576
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 819
+    maxexp: 33617
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 820
+    maxexp: 33658
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 821
+    maxexp: 33699
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 822
+    maxexp: 33740
+    reward_list:
+    - GEM:184
+    maxsheep: 35
+  - level: 823
+    maxexp: 33781
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 824
+    maxexp: 33822
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 825
+    maxexp: 33863
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 826
+    maxexp: 33904
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 827
+    maxexp: 33945
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 828
+    maxexp: 33986
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 829
+    maxexp: 34027
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 830
+    maxexp: 34068
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 831
+    maxexp: 34109
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 832
+    maxexp: 34150
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 833
+    maxexp: 34191
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 834
+    maxexp: 34232
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 835
+    maxexp: 34273
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 836
+    maxexp: 34314
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 837
+    maxexp: 34355
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 838
+    maxexp: 34396
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 839
+    maxexp: 34437
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 840
+    maxexp: 34478
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 841
+    maxexp: 34519
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 842
+    maxexp: 34560
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 843
+    maxexp: 34601
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 844
+    maxexp: 34642
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 845
+    maxexp: 34683
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 846
+    maxexp: 34724
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 847
+    maxexp: 34765
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 848
+    maxexp: 34806
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 849
+    maxexp: 34847
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 850
+    maxexp: 34888
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 851
+    maxexp: 34929
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 852
+    maxexp: 34970
+    reward_list:
+    - GEM:220
+    maxsheep: 35
+  - level: 853
+    maxexp: 35011
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 854
+    maxexp: 35052
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 855
+    maxexp: 35093
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 856
+    maxexp: 35134
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 857
+    maxexp: 35175
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 858
+    maxexp: 35216
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 859
+    maxexp: 35257
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 860
+    maxexp: 35298
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 861
+    maxexp: 35339
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 862
+    maxexp: 35380
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 863
+    maxexp: 35421
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 864
+    maxexp: 35462
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 865
+    maxexp: 35503
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 866
+    maxexp: 35544
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 867
+    maxexp: 35585
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 868
+    maxexp: 35626
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 869
+    maxexp: 35667
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 870
+    maxexp: 35708
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 871
+    maxexp: 35749
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 872
+    maxexp: 35790
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 873
+    maxexp: 35831
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 874
+    maxexp: 35872
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 875
+    maxexp: 35913
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 876
+    maxexp: 35954
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 877
+    maxexp: 35995
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 878
+    maxexp: 36036
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 879
+    maxexp: 36077
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 880
+    maxexp: 36118
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 881
+    maxexp: 36159
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 882
+    maxexp: 36200
+    reward_list:
+    - GEM:263
+    maxsheep: 35
+  - level: 883
+    maxexp: 36241
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 884
+    maxexp: 36282
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 885
+    maxexp: 36323
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 886
+    maxexp: 36364
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 887
+    maxexp: 36405
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 888
+    maxexp: 36446
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 889
+    maxexp: 36487
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 890
+    maxexp: 36528
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 891
+    maxexp: 36569
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 892
+    maxexp: 36610
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 893
+    maxexp: 36651
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 894
+    maxexp: 36692
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 895
+    maxexp: 36733
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 896
+    maxexp: 36774
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 897
+    maxexp: 36815
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 898
+    maxexp: 36856
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 899
+    maxexp: 36897
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 900
+    maxexp: 36938
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 901
+    maxexp: 36979
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 902
+    maxexp: 37020
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 903
+    maxexp: 37061
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 904
+    maxexp: 37102
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 905
+    maxexp: 37143
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 906
+    maxexp: 37184
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 907
+    maxexp: 37225
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 908
+    maxexp: 37266
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 909
+    maxexp: 37307
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 910
+    maxexp: 37348
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 911
+    maxexp: 37389
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 912
+    maxexp: 37430
+    reward_list:
+    - GEM:314
+    maxsheep: 35
+  - level: 913
+    maxexp: 37471
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 914
+    maxexp: 37512
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 915
+    maxexp: 37553
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 916
+    maxexp: 37594
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 917
+    maxexp: 37635
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 918
+    maxexp: 37676
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 919
+    maxexp: 37717
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 920
+    maxexp: 37758
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 921
+    maxexp: 37799
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 922
+    maxexp: 37840
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 923
+    maxexp: 37881
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 924
+    maxexp: 37922
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 925
+    maxexp: 37963
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 926
+    maxexp: 38004
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 927
+    maxexp: 38045
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 928
+    maxexp: 38086
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 929
+    maxexp: 38127
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 930
+    maxexp: 38168
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 931
+    maxexp: 38209
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 932
+    maxexp: 38250
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 933
+    maxexp: 38291
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 934
+    maxexp: 38332
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 935
+    maxexp: 38373
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 936
+    maxexp: 38414
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 937
+    maxexp: 38455
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 938
+    maxexp: 38496
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 939
+    maxexp: 38537
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 940
+    maxexp: 38578
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 941
+    maxexp: 38619
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 942
+    maxexp: 38660
+    reward_list:
+    - GEM:376
+    maxsheep: 35
+  - level: 943
+    maxexp: 38701
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 944
+    maxexp: 38742
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 945
+    maxexp: 38783
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 946
+    maxexp: 38824
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 947
+    maxexp: 38865
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 948
+    maxexp: 38906
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 949
+    maxexp: 38947
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 950
+    maxexp: 38988
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 951
+    maxexp: 39029
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 952
+    maxexp: 39070
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 953
+    maxexp: 39111
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 954
+    maxexp: 39152
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 955
+    maxexp: 39193
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 956
+    maxexp: 39234
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 957
+    maxexp: 39275
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 958
+    maxexp: 39316
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 959
+    maxexp: 39357
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 960
+    maxexp: 39398
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 961
+    maxexp: 39439
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 962
+    maxexp: 39480
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 963
+    maxexp: 39521
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 964
+    maxexp: 39562
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 965
+    maxexp: 39603
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 966
+    maxexp: 39644
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 967
+    maxexp: 39685
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 968
+    maxexp: 39726
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 969
+    maxexp: 39767
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 970
+    maxexp: 39808
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 971
+    maxexp: 39849
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 972
+    maxexp: 39890
+    reward_list:
+    - GEM:450
+    maxsheep: 35
+  - level: 973
+    maxexp: 39931
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 974
+    maxexp: 39972
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 975
+    maxexp: 40013
+    reward_list:
+    - GEM:539
+    maxsheep: 35
+  - level: 976
+    maxexp: 40054
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 977
+    maxexp: 40095
+    reward_list:
+    - GEM:539
+    maxsheep: 35
+  - level: 978
+    maxexp: 40136
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 979
+    maxexp: 40177
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 980
+    maxexp: 40218
+    reward_list:
+    - GEM:539
+    maxsheep: 35
+  - level: 981
+    maxexp: 40259
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 982
+    maxexp: 40300
+    reward_list:
+    - GEM:539
+    maxsheep: 35
+  - level: 983
+    maxexp: 40341
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 984
+    maxexp: 40382
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 985
+    maxexp: 40423
+    reward_list:
+    - GEM:539
+    maxsheep: 35
+  - level: 986
+    maxexp: 40464
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 987
+    maxexp: 40505
+    reward_list:
+    - GEM:539
+    maxsheep: 35
+  - level: 988
+    maxexp: 40546
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 989
+    maxexp: 40587
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
+  - level: 990
+    maxexp: 40628
+    reward_list:
+    - GEM:539
+    maxsheep: 35
+  - level: 991
+    maxexp: 40669
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 992
+    maxexp: 40710
+    reward_list:
+    - GEM:539
+    maxsheep: 35
+  - level: 993
+    maxexp: 40751
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 994
+    maxexp: 40792
+    reward_list:
+    - ULTRA_MERGE:1
+    maxsheep: 35
+  - level: 995
+    maxexp: 40833
+    reward_list:
+    - GEM:539
+    maxsheep: 35
+  - level: 996
+    maxexp: 40874
+    reward_list:
+    - GOLDEN_BOX:1
+    maxsheep: 35
+  - level: 997
+    maxexp: 40915
+    reward_list:
+    - GEM:539
+    maxsheep: 35
+  - level: 998
+    maxexp: 40956
+    reward_list:
+    - SUPER_SPEED:1
+    maxsheep: 35
+  - level: 999
+    maxexp: 40997
+    reward_list:
+    - MEGA_TAP:1
+    maxsheep: 35
